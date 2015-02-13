@@ -2,22 +2,26 @@ package com.rchab.gof.command.samples.footballSample;
 
 public class DefenceCommand extends Command {
 
+    private Receiver receiver;
     private Integer lastDefenders;
     private Integer lastForwards;
 
+    public DefenceCommand(Receiver receiver) {
+        this.receiver = receiver;
+    }
+
     @Override
-    public void execute(Target target) {
-        this.lastDefenders = target.getDefenders();
-        this.lastForwards = target.getForwards();
-        target.addDefender();
-        this.target = target;
+    public void execute() {
+        this.lastDefenders = receiver.getDefenders();
+        this.lastForwards = receiver.getForwards();
+        receiver.addDefender();
     }
 
     @Override
     public void undo() {
-        if(target != null && lastDefenders != null && lastForwards != null){
-            target.setDefenders(lastDefenders);
-            target.setForwards(lastForwards);
+        if(receiver != null && lastDefenders != null && lastForwards != null){
+            receiver.setDefenders(lastDefenders);
+            receiver.setForwards(lastForwards);
         }
     }
 

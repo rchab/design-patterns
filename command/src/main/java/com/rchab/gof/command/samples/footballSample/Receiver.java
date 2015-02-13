@@ -1,12 +1,12 @@
 package com.rchab.gof.command.samples.footballSample;
 
-public abstract class Target {
+public abstract class Receiver {
 
     protected Integer defenders;
     protected Integer forwards;
     protected Speed speed;
 
-    protected Target(Integer defenders, Integer forwards, Speed speed) {
+    protected Receiver(Integer defenders, Integer forwards, Speed speed) {
         this.defenders = defenders;
         this.forwards = forwards;
         this.speed = speed;
@@ -44,7 +44,7 @@ public abstract class Target {
 
     @Override
     public String toString() {
-        return "Target{" +
+        return "Receiver{" +
                 "defenders=" + defenders +
                 ", forwards=" + forwards +
                 ", speed=" + speed +

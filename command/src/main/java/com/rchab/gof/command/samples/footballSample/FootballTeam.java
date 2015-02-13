@@ -1,6 +1,6 @@
 package com.rchab.gof.command.samples.footballSample;
 
-public class FootballTeam extends Target {
+public class FootballTeam extends Receiver {
 
     protected Integer size;
 

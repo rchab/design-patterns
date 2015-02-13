@@ -40,7 +40,7 @@ local.properties
 .buildpath
 
 ### Maven ###
-target/
+receiver/
 
 ### Common ###
 *.log
