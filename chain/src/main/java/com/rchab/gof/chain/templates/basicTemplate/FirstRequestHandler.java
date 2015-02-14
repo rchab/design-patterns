@@ -1,4 +1,4 @@
-package com.rchab.gof.chain.templetes.basicTemplete;
+package com.rchab.gof.chain.templates.basicTemplate;
 
 public class FirstRequestHandler extends RequestHandler{
 

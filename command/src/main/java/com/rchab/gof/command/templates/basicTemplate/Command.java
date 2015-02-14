@@ -1,4 +1,4 @@
-package com.rchab.gof.templetes.basicTemplete;
+package com.rchab.gof.command.templates.basicTemplate;
 
 public interface Command {
 

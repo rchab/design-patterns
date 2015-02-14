@@ -1,4 +1,4 @@
-package com.rchab.gof.chain.templetes.cycledTemplete;
+package com.rchab.gof.chain.templates.cycledTemplate;
 
 public class RequestHandler {
 
