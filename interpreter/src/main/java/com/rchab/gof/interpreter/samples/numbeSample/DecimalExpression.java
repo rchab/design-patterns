@@ -2,23 +2,13 @@ package com.rchab.gof.interpreter.samples.numbeSample;
 
 import java.util.StringTokenizer;
 
-public class DecimalExpression implements Expression {
-    @Override
-    public void interpret(Context context) {
-        StringTokenizer tokenizer = new StringTokenizer(context.getInput(), " ");
-        while (tokenizer.hasMoreTokens()){
-            String token = tokenizer.nextToken();
-            if(isAppropriateToken(token)){
-                context.addOutput(convert(token));
-            }
-        }
+public class DecimalExpression extends Expression {
+
+    public boolean isAppropriateToken(String token){
+        return !token.startsWith(HEXA_PREFIX) && !token.startsWith(OCTAL_PREFIX);
     }
 
-    private boolean isAppropriateToken(String token){
-        return !token.startsWith("0x") && !token.startsWith("0");
-    }
-
-    private Integer convert(String token){
+    public Integer convert(String token){
         return Integer.parseInt(token);
     }
 }
