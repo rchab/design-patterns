@@ -16,7 +16,7 @@ public class Main {
     private static List<Number> prepareNumbers(){
         short shortNumber = 2;
 
-        List<Number> numbers = new LinkedList<>();
+        List<Number> numbers = new LinkedList<Number>();
         numbers.add(1);
         numbers.add(new Short(shortNumber));
         numbers.add(new Long(3));
