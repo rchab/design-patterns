@@ -6,7 +6,7 @@ public class Main {
         String input = "Here is some simple text example";
         Context context = new Context(input);
 
-        for(Expression expression: new Client().analyzeContext(context)){
+        for (Expression expression : new Client().analyzeContext(context)) {
             expression.interpret(context);
         }
 

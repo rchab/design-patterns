@@ -12,7 +12,7 @@ public class Client {
         boolean isUpper = true;
 
         while (st.hasMoreTokens()) {
-            if(isUpper){
+            if (isUpper) {
                 expressionList.add(new UpperCaseExpression(st.nextToken()));
                 isUpper = false;
             } else {

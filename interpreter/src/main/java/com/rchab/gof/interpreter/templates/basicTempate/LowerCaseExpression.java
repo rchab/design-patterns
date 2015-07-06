@@ -1,6 +1,6 @@
 package com.rchab.gof.interpreter.templates.basicTempate;
 
-public class LowerCaseExpression implements Expression{
+public class LowerCaseExpression implements Expression {
     private String value;
 
     public LowerCaseExpression(String value) {
