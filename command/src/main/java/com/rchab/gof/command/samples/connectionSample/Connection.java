@@ -1,6 +1,6 @@
 package com.rchab.gof.command.samples.connectionSample;
 
-// Receiver
+// Target
 public class Connection extends Receiver{
 
     boolean isOpen = false;

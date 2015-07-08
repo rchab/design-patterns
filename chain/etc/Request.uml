@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.rchab.gof.chain.templates.basicTemplate.Request</OriginalElement>
+  <nodes>
+    <node x="0.0" y="200.0">com.rchab.gof.chain.templates.basicTemplate.FirstRequestHandler</node>
+    <node x="100.0" y="111.0">com.rchab.gof.chain.templates.basicTemplate.Request</node>
+    <node x="301.0" y="200.0">com.rchab.gof.chain.templates.basicTemplate.SecondRequestHandler</node>
+    <node x="320.0" y="0.0">com.rchab.gof.chain.templates.basicTemplate.RequestHandler</node>
+    <node x="338.5" y="339.0">com.rchab.gof.chain.templates.basicTemplate.Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.rchab.gof.chain.templates.basicTemplate.Client" target="com.rchab.gof.chain.templates.basicTemplate.SecondRequestHandler">
+      <point x="0.0" y="-55.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="com.rchab.gof.chain.templates.basicTemplate.Client" target="com.rchab.gof.chain.templates.basicTemplate.RequestHandler">
+      <point x="73.33333333333333" y="-55.0" />
+      <point x="521.8333333333333" y="314.0" />
+      <point x="606.5" y="314.0" />
+      <point x="606.5" y="175.0" />
+      <point x="534.1666666666667" y="175.0" />
+      <point x="85.66666666666669" y="75.0" />
+    </edge>
+    <edge source="com.rchab.gof.chain.templates.basicTemplate.Client" target="com.rchab.gof.chain.templates.basicTemplate.FirstRequestHandler">
+      <point x="-73.33333333333331" y="-55.0" />
+      <point x="375.1666666666667" y="314.0" />
+      <point x="140.5" y="314.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="com.rchab.gof.chain.templates.basicTemplate.SecondRequestHandler" target="com.rchab.gof.chain.templates.basicTemplate.RequestHandler">
+      <point x="0.0" y="-44.5" />
+      <point x="0.0" y="75.0" />
+    </edge>
+    <edge source="com.rchab.gof.chain.templates.basicTemplate.FirstRequestHandler" target="com.rchab.gof.chain.templates.basicTemplate.RequestHandler">
+      <point x="0.0" y="-44.5" />
+      <point x="140.5" y="175.0" />
+      <point x="362.8333333333333" y="175.0" />
+      <point x="-85.66666666666669" y="75.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="303.5" y="261.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

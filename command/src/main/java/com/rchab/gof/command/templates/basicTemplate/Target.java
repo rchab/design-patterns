@@ -1,6 +1,6 @@
 package com.rchab.gof.command.templates.basicTemplate;
 
-public class Receiver {
+public class Target {
 
     public void action(){
         System.out.println("Some action");

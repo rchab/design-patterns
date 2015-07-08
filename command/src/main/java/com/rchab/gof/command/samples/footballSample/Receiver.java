@@ -44,7 +44,7 @@ public abstract class Receiver {
 
     @Override
     public String toString() {
-        return "Receiver{" +
+        return "Target{" +
                 "defenders=" + defenders +
                 ", forwards=" + forwards +
                 ", speed=" + speed +

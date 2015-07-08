@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.rchab.gof.command.templates.basicTemplate.Command</OriginalElement>
+  <nodes>
+    <node x="287.0" y="298.0">com.rchab.gof.command.templates.basicTemplate.Client</node>
+    <node x="236.5" y="0.0">com.rchab.gof.command.templates.basicTemplate.Command</node>
+    <node x="259.0" y="118.0">com.rchab.gof.command.templates.basicTemplate.ConcreteCommand</node>
+    <node x="0.0" y="149.0">com.rchab.gof.command.templates.basicTemplate.Invoker</node>
+    <node x="401.5" y="10.0">com.rchab.gof.command.templates.basicTemplate.Target</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.rchab.gof.command.templates.basicTemplate.Client" target="com.rchab.gof.command.templates.basicTemplate.ConcreteCommand">
+      <point x="0.0" y="-24.0" />
+      <point x="0.0" y="65.0" />
+    </edge>
+    <edge source="com.rchab.gof.command.templates.basicTemplate.Client" target="com.rchab.gof.command.templates.basicTemplate.Invoker">
+      <point x="-48.0" y="-24.0" />
+      <point x="311.0" y="273.0" />
+      <point x="119.5" y="273.0" />
+      <point x="0.0" y="34.0" />
+    </edge>
+    <edge source="com.rchab.gof.command.templates.basicTemplate.ConcreteCommand" target="com.rchab.gof.command.templates.basicTemplate.Target">
+      <point x="50.0" y="-65.0" />
+      <point x="409.0" y="93.0" />
+      <point x="430.25" y="93.0" />
+      <point x="-28.75" y="24.0" />
+    </edge>
+    <edge source="com.rchab.gof.command.templates.basicTemplate.Client" target="com.rchab.gof.command.templates.basicTemplate.Target">
+      <point x="48.0" y="-24.0" />
+      <point x="407.0" y="273.0" />
+      <point x="487.75" y="273.0" />
+      <point x="28.75" y="24.0" />
+    </edge>
+    <edge source="com.rchab.gof.command.templates.basicTemplate.ConcreteCommand" target="com.rchab.gof.command.templates.basicTemplate.Command">
+      <point x="-50.0" y="-65.0" />
+      <point x="0.0" y="34.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="258.5" y="173.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

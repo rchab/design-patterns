@@ -1,4 +1,4 @@
-package com.rchab.gof.chain.templates.basicTemplate;
+package com.rchab.gof.chain.test4;
 
 public abstract class RequestHandler {
 
@@ -8,7 +8,7 @@ public abstract class RequestHandler {
         this.next = next;
     }
 
-    public void handleRequest(Request request) {
+    public void handleRequest(String request) {
         if (isAppropriateRequest(request)) {
             executeRequest(request);
         } else {
@@ -16,16 +16,16 @@ public abstract class RequestHandler {
         }
     }
 
-    //Methods for concrete handlers:
-    public abstract boolean isAppropriateRequest(Request request);
-
-    public abstract void executeRequest(Request request);
-
-    private void delegateRequestToNext(Request request) {
+    private void delegateRequestToNext(String request) {
         if (next != null) {
             next.handleRequest(request);
         } else {
-            System.out.println("Unhandled request: " + request.toString());
+            System.out.println("Unhandled request " + request);
         }
     }
+
+
+    protected abstract void executeRequest(String request);
+
+    protected abstract boolean isAppropriateRequest(String request);
 }

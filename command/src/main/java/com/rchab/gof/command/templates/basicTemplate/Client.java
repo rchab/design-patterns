@@ -4,11 +4,10 @@ public class Client {
 
     public static void main(String[] args) {
 
-        Receiver receiver = new Receiver();
-        Command command = new ConcreteCommand(receiver);
+        Target target = new Target();
+        Command command = new ConcreteCommand(target);
 
         Invoker invoker = new Invoker();
-        invoker.setCommand(command);
-        invoker.executeCommand();
+        invoker.executeCommand(command);
     }
 }

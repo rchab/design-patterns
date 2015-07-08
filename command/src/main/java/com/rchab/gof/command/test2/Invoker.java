@@ -1,8 +1,8 @@
-package com.rchab.gof.command.templates.basicTemplate;
+package com.rchab.gof.command.test2;
 
 public class Invoker {
 
-    public void executeCommand(Command command){
+    public void executeCommand(Command command) {
         command.execute();
     }
 
